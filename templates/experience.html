@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Matías Ezequiel Maretto</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ url_for( 'experience' ) }}">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container p-4">
+    <!-- Title -->
+    <h1>Experience</h1>
+
+    <!-- Main content -->
+    <div class="row">
+        <div class="col-sm-auto p-4">
+            <div class="row g-0 card bg-transparent border rounded border-warning  align-items-center">
+                <div class="col-md-4 p-4">
+                    <img src="https://100seguro.com.ar/wp-content/uploads/2015/05/Logo123.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="card-body text-center">
+                    <p class="card-text bold">Automation Engineer | Process Automation | April 2021 – Present</p>
+                    <h5 class="card-title">123Seguro | Ciudad Autónoma de Buenos Aires | RPA</h5>
+                    <p class="card-text">
+                        Create and maintain the company’s work automation process.<br>
+                        Project re-structure going from Robot Framework to Python.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-auto p-4">
+            <div class="row g-0 bg-transparent border rounded border-warning">
+                <div class="col-md-4 d-flex align-items-center p-4">
+                    <img src="https://ii.ct-stc.com/2/logos/empresas/2018/10/11//hitss212844thumbnail.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text bold">QA Automation and Test Analyst | Automated and manual testing | March 2019 – April 2021</p>
+                        <h5 class="card-title">GlobalHitss | Ciudad Autónoma de Buenos Aires | Claro | ADM, Netflex, y ClaroVideoRoku</h5>
+                        <p class="card-text">
+                            <u>ADM:</u><br>
+                            The first two month at GlobalHitss I was doing manual testing on the development of an inside online app, being in parallel who was in charge of starting the automation on it.<br>
+                            During that time I was also in charge of the tutelage of a new QA colleague in the team, in her final probationary period at the company academy.<br>
+                        </p>
+                        <p class="card-text">
+                            <u>Netflex:</u><br>
+                            After those two month I was moved to another project that was focused on an app for Smart TVs.<br>
+                            In the lead of the investigation to create and install apps on a set of Smart TVs and STBs, making the base documentation to work with them.<br>
+                            At the same time I was also investigating the automation of those TVs.<br>
+                            After 2 months a new QA team member was included, from the same Company academy, and was also in charge of her tutelage.<br>
+                            For 3 months I was also an interim Functional Analyst for the project until an Analyst was hired.<br>
+                            And for 2 months I did exercise as the "leader" for the team until we were assigned to a new PO.<br>
+                            Also I did created and updated Test Cases and Reports.<br>
+                        </p>
+                        <p class="card-text">
+                            <u>CVRKS:</u><br>
+                            After 1 year and 6 months the entire team was moved to create a video streaming app for Roku devices and we were given a period to research the technology.<br>
+                            By QA, we decided to automate the devices through Selenium WebDriver, developing with Python and Robot Framework, so we focused on learning those languages.<br>
+                            We got to implement it and we ran manual and automated testing in parallel.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-auto p-4">
+            <div class="row g-0 bg-transparent border rounded border-warning">
+                <div class="col-md-4 d-flex align-items-center p-4">
+                    <img src="https://www.copado.com/wp-content/uploads/2020/12/Xappia-Logo.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text bold">QA Automation and Test Analyst | Automated Testing | November 2017 – March 2019</p>
+                        <h5 class="card-title">Xappia | Ciudad Autónoma de Buenos Aires | Telecom | Marketing, Report, BeFAN, etc.</h5>
+                        <p class="card-text">
+                            Identification, creation, and execution of automated testing on the Telecom CRM platform on SalesForce.<br>
+                            Tests development was done with Selenium WebDriver and Java 8 tools on Eclipse.<br>
+                            By the end I was in charge of new projects related to servers and DBs.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-auto p-4">
+            <div class="row g-0 bg-transparent border rounded border-warning">
+                <div class="col-md-4 d-flex align-items-center p-4">
+                    <img src="https://cdn.uc.assets.prezly.com/fd7d371d-04dd-4f9f-bc84-c039ed8c533d/-/quality/best/-/format/auto/" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text bold">QC Analyst | Testing | January 2016 – June 2017</p>
+                        <h5 class="card-title">Globant | Ciudad Autónoma de Buenos Aires | DirecTV Project | STB & UAT</h5>
+                        <p class="card-text">
+                            Functional testing on different decoder’s models with access to Linux console management for the world's leading satellite TV company.
+                            Modification, improvement, and creation of Test Cases.
+                            In charge of inventory and administration of the work team.
+                            We also perform Requirement’s Reverse Engineering.
+                            Later, on UAT sector for the same company, deeper and end-user level testing with Test Case Creation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

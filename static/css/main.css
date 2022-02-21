@@ -1,0 +1,35 @@
+body{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+h5{
+    color: #5c8f03;
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    color: #5c8f03;
+}
+.size-30{
+    font-size: 30px;
+}
+.orange{
+    color: #f59c28;
+}
+.green{
+    color: #5c8f03;
+}
+.blue{
+    color: #2d50c5;
+}
+.violet{
+    color: #9d66e6;
+}
+.profile_photo {
+    height: 300px;
+}
