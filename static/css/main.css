@@ -18,6 +18,12 @@ h1{
 .size-30{
     font-size: 30px;
 }
+.size-20{
+    font-size: 20px;
+}
+.size-15{
+    font-size: 15px;
+}
 .orange{
     color: #f59c28;
 }
@@ -30,6 +36,41 @@ h1{
 .violet{
     color: #9d66e6;
 }
+.white{
+    color: #ffffff;
+}
+.inactive_row{
+    color: #a7a7a7;
+}
 .profile_photo {
-    height: 300px;
+    height: 200px;
+}
+.icon {
+    height: 25px;
+    vertical-align: middle;
+}
+.max_with_1050{
+    max-width: 1050px;
+}
+.mtb0 {
+    margin-top: -2px;
+    margin-bottom : -2px;
+}
+/* .bg_emphasis{
+    background-color: #56833c;
+    color: #ffffff;
+}
+.bg_not_emphasis{
+    background-color: #56833c8a;
+} */
+.bg_emphasis{
+    background-color: #ca7525;
+    color: #ffffff;
+}
+.bg_not_emphasis{
+    background-color: #ca75258f;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
 }

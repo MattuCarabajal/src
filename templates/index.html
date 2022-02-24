@@ -2,47 +2,159 @@
 
 {% block content %}
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">Matías Ezequiel Maretto</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for( 'experience' ) }}">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Link Disabled</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
 <div class="container p-4">
     <!-- Main content -->
-    <p>hello_world.py</p>
-    <div class="row">
-        <div class="col-sm-6 p-4">
-            <p class="orange size-30">January 2022</p>
-            <p class="green size-30">Maretto, Matías Ezequiel</p>
-            <p class="blue size-30">
-                +54 11 3118-3146<br>
-                matias.maretto@gmail.com<br>
-                Tomás M. Saubidet 3988 - 10 C<br>
-                Villa Martelli | Vicente López<br>
-            </p>
-        </div>
-        <div class="col-sm-6 p-4">
-            <img src="{{url_for('static',filename = 'images/profile_foto_rounded.png')}}" class="rounded mx-auto d-block profile_photo" alt="Matías Ezequiel Maretto">
-        </div>
-        <div class="col-sm-auto p-4">
-            <span class="violet size-30">print</span>&nbsp;<span class="size-30">(</span>&nbsp;<span class="green size-30"> “Lack of knowledge is not an excuse or impediment, it’s just the first step on learning something new.” </span>&nbsp;<span class="size-30"></span><span class="size-30">)</span>
-        </div>
+    <div class="table-responsive-sm max_with_1050 center">
+        <table class="table align-middle table-borderless mtb0 size-20">
+            <tbody>
+                <tr class="bg_not_emphasis">
+                    <td style="background-color:#ca75258f">
+                        <img src="{{url_for('static',filename = 'images/icon-python.png')}}"
+                            class="rounded mx-auto d-block icon" alt="Python">
+                    </td>
+                    <td style="background-color:#ca75258f" class="white text-center">
+                        hello_world.py
+                    </td>
+                    <td style="background-color:#ca75258f">
+                        <img src="{{url_for('static',filename = 'images/empty.png')}}" onmouseover="this.src='{{url_for("static",filename = "images/close.png")}}'" onmouseout="this.src='{{url_for("static",filename = "images/empty.png")}}'" class="rounded mx-auto d-block icon" />
+                    </td>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-borderless table-dark mtb0">
+            <tbody>
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table align-middle table-dark table-hover table-borderless mtb0 size-20">
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td class="inactive_row">1</td>
+                    <td>
+                        <span class="orange">
+                            January 2022
+                        </span>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="inactive_row">2</td>
+                    <td>
+                        <span class="green">
+                            Maretto, Matías Ezequiel
+                        </span>
+                    </td>
+                    <td colspan="2" rowspan="5">
+                        <img src="{{url_for('static',filename = 'images/profile_foto_rounded.png')}}"
+                            class="rounded mx-auto d-block profile_photo" alt="Matías Ezequiel Maretto">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="inactive_row">3</td>
+                    <td>
+                        <span class="blue">
+                            +54 11 3118-3146
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="inactive_row">4</td>
+                    <td>
+                        <span class="blue">
+                            matias.maretto@gmail.com
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="inactive_row">5</td>
+                    <td>
+                        <span class="blue">
+                            Tomás M. Saubidet 3988 - 10 C
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="inactive_row">6</td>
+                    <td>
+                        <span class="blue">
+                            Villa Martelli | Vicente López
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table align-middle table-dark table-hover table-borderless mtb0 size-20">
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td class="inactive_row">&nbsp;&nbsp;&nbsp;7</td>
+                    <td></td>
+                    <td>
+                        <span class="violet">&nbsp;print</span>&nbsp;<span class="white">(</span>&nbsp;<span class="green">
+                            “Lack of knowledge is not an excuse or impediment, it’s just the first step to learn something new. ” </span>&nbsp;<span class="white">)</span>
+                    </td>
+                    <td></td>
+                </tr>
+        </table>
+        <table class="table table-borderless table-dark mtb0">
+            <tbody>
+                <tr><td></td></tr>
+            </tbody>
+        </table>
+        <table class="table align-middle table-borderless mtb0 size-15">
+            <tbody>
+                <tr class="bg_emphasis text-center">
+                    <td></td>
+                    <td>master</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>UTF-8</td>
+                    <td>Python</td>
+                    <td>3.9.1</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Navigation -->
+<div class="container p-4">
+    <div class="btn-group center" role="group">
+        <a href="{{ url_for( 'index' ) }}" class="btn btn-outline-primary active" aria-current="page">Presentation</a>
+        <a href="{{ url_for( 'experience' ) }}" class="btn btn-outline-primary">Experience</a>
     </div>
 </div>
 {% endblock %}
