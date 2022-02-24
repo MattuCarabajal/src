@@ -7,15 +7,15 @@
     <div class="table-responsive-sm max_with_1050 center">
         <table class="table align-middle table-borderless mtb0 size-20">
             <tbody>
-                <tr class="bg_not_emphasis">
-                    <td style="background-color:#ca75258f">
+                <tr class="bg_not_emphasis_green">
+                    <td style="background-color:#56833c">
                         <img src="{{url_for('static',filename = 'images/icon-python.png')}}"
                             class="rounded mx-auto d-block icon" alt="Python">
                     </td>
-                    <td style="background-color:#ca75258f" class="white text-center">
+                    <td style="background-color:#56833c" class="white text-center">
                         hello_world.py
                     </td>
-                    <td style="background-color:#ca75258f">
+                    <td style="background-color:#56833c">
                         <img src="{{url_for('static',filename = 'images/empty.png')}}" onmouseover="this.src='{{url_for("static",filename = "images/close.png")}}'" onmouseout="this.src='{{url_for("static",filename = "images/empty.png")}}'" class="rounded mx-auto d-block icon" />
                     </td>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
@@ -115,7 +115,7 @@
         </table>
         <table class="table align-middle table-borderless mtb0 size-15">
             <tbody>
-                <tr class="bg_emphasis text-center">
+                <tr class="bg_emphasis_green text-center">
                     <td></td>
                     <td>master</td>
                     <td></td>
@@ -153,8 +153,7 @@
 <!-- Navigation -->
 <div class="container p-4">
     <div class="btn-group center" role="group">
-        <a href="{{ url_for( 'index' ) }}" class="btn btn-outline-primary active" aria-current="page">Presentation</a>
-        <a href="{{ url_for( 'green_version' ) }}" class="btn btn-outline-primary">Green Version</a>
+        <a href="{{ url_for( 'index' ) }}" class="btn btn-outline-primary active" aria-current="page">Orange Version</a>
         <a href="{{ url_for( 'experience' ) }}" class="btn btn-outline-primary">Experience</a>
     </div>
 </div>

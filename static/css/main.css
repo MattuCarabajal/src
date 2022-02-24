@@ -56,21 +56,21 @@ h1{
     margin-top: -2px;
     margin-bottom : -2px;
 }
-/* .bg_emphasis{
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg_emphasis_green{
     background-color: #56833c;
     color: #ffffff;
 }
-.bg_not_emphasis{
+.bg_not_emphasis_green{
     background-color: #56833c8a;
-} */
+}
 .bg_emphasis{
     background-color: #ca7525;
     color: #ffffff;
 }
 .bg_not_emphasis{
     background-color: #ca75258f;
-}
-.center{
-    margin-left: auto;
-    margin-right: auto;
 }
