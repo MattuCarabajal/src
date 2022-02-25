@@ -6,10 +6,6 @@ app = Flask(__name__)
 def index():
     return render_template( 'index.html' )
 
-@app.route( '/green_version' )
-def green_version():
-    return render_template( 'index_green.html' )
-
 @app.route( '/experience' )
 def experience():
     return render_template( 'experience.html' )

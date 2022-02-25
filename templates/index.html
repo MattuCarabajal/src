@@ -8,26 +8,27 @@
         <table class="table align-middle table-borderless mtb0 size-20">
             <tbody>
                 <tr class="bg_not_emphasis">
-                    <td style="background-color:#ca75258f">
+                    <td style="background-color:#ca75258f;width:35px">
                         <img src="{{url_for('static',filename = 'images/icon-python.png')}}"
                             class="rounded mx-auto d-block icon" alt="Python">
                     </td>
-                    <td style="background-color:#ca75258f" class="white text-center">
+                    <td style="background-color:#ca75258f;width:100px" class="white text-center">
                         hello_world.py
                     </td>
-                    <td style="background-color:#ca75258f">
-                        <img src="{{url_for('static',filename = 'images/empty.png')}}" onmouseover="this.src='{{url_for("static",filename = "images/close.png")}}'" onmouseout="this.src='{{url_for("static",filename = "images/empty.png")}}'" class="rounded mx-auto d-block icon" />
+                    <td style="background-color:#ca75258f;width:45px">
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                     </td>
-                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
         <table class="table table-borderless table-dark mtb0">
             <tbody>
                 <tr>
-                    <td></td><td></td><td></td><td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
@@ -41,8 +42,8 @@
                             January 2022
                         </span>
                     </td>
-                    <td></td>
-                    <td></td>
+                    <td class="mobile_hidden"></td>
+                    <td class="mobile_hidden"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -52,8 +53,8 @@
                             Maretto, Matías Ezequiel
                         </span>
                     </td>
-                    <td colspan="2" rowspan="5">
-                        <img src="{{url_for('static',filename = 'images/profile_foto_rounded.png')}}"
+                    <td colspan="2" rowspan="5" style="width:400px"  class="mobile_hidden">
+                        <img id="profile_photo" src="{{url_for('static',filename = 'images/profile_foto_rounded.png')}}"
                             class="rounded mx-auto d-block profile_photo" alt="Matías Ezequiel Maretto">
                     </td>
                 </tr>
@@ -93,57 +94,42 @@
                         </span>
                     </td>
                 </tr>
-            </tbody>
-        </table>
-        <table class="table align-middle table-dark table-hover table-borderless mtb0 size-20">
-            <tbody>
                 <tr>
                     <td></td>
-                    <td class="inactive_row">&nbsp;&nbsp;&nbsp;7</td>
-                    <td></td>
-                    <td>
-                        <span class="violet">&nbsp;print</span>&nbsp;<span class="white">(</span>&nbsp;<span class="green">
-                            “Lack of knowledge is not an excuse or impediment, it’s just the first step to learn something new. ” </span>&nbsp;<span class="white">)</span>
+                    <td class="inactive_row">7</td>
+                    <td colspan="2">
+                        <span class="violet">print</span>&nbsp;<span class="white">(</span>&nbsp;
+                        <span class="green">'Lack of knowledge is not an excuse or impediment,</span>
                     </td>
-                    <td></td>
+                    <td class="mobile_hidden"></td>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td class="inactive_row">8</td>
+                    <td colspan="2" align="right">
+                        <span class="green">it’s just the first step to learn something new.'</span>&nbsp;<span class="white">)</span>
+                    </td>
+                    <td class="mobile_hidden"></td>
+                </tr>
+            </tbody>
         </table>
         <table class="table table-borderless table-dark mtb0">
             <tbody>
-                <tr><td></td></tr>
+                <tr>
+                    <td></td>
+                </tr>
             </tbody>
         </table>
         <table class="table align-middle table-borderless mtb0 size-15">
             <tbody>
                 <tr class="bg_emphasis text-center">
+                    <td style="width:10px" align="left"></td>
+                    <td style="width:80px" class="text-center" align="left">master</td>
                     <td></td>
-                    <td>master</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>UTF-8</td>
-                    <td>Python</td>
-                    <td>3.9.1</td>
-                    <td></td>
+                    <td style="width:80px" class="text-center" align="right">UTF-8</td>
+                    <td style="width:80px" class="text-center" align="right">Python</td>
+                    <td style="width:80px" class="text-center" align="right">3.9.1</td>
+                    <td style="width:10px" class="text-center" align="right"></td>
                 </tr>
             </tbody>
         </table>
@@ -154,7 +140,6 @@
 <div class="container p-4">
     <div class="btn-group center" role="group">
         <a href="{{ url_for( 'index' ) }}" class="btn btn-outline-primary active" aria-current="page">Presentation</a>
-        <a href="{{ url_for( 'green_version' ) }}" class="btn btn-outline-primary">Green Version</a>
         <a href="{{ url_for( 'experience' ) }}" class="btn btn-outline-primary">Experience</a>
     </div>
 </div>
