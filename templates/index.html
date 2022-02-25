@@ -10,10 +10,13 @@
                 <tr class="bg_not_emphasis">
                     <td style="background-color:#ca75258f;width:35px">
                         <img src="{{url_for('static',filename = 'images/icon-python.png')}}"
-                            class="rounded mx-auto d-block icon" alt="Python">
+                            class="rounded mx-auto d-block icon not_selectable" alt="Python">
                     </td>
                     <td style="background-color:#ca75258f;width:100px" class="white text-center">
-                        hello_world.py
+                        <span class="not_selectable">
+                            hello_world.py
+                        </span>
+                        <!-- <div onselectstart="return false">your text</div> Not working properly-->
                     </td>
                     <td style="background-color:#ca75258f;width:45px">
                         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>

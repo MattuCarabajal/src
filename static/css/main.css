@@ -75,3 +75,16 @@ h1{
 .hidden{
     display: none;
 }
+/* .text-not-selectable{
+    cursor: default;
+    user-select: none;
+} */
+.not_selectable {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.not_selectable::selection {
+    background: transparent;
+}
