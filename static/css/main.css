@@ -4,10 +4,54 @@
     }
 }
 body{
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #232526;
     color: #fff;
+    height:100%;
+    overflow-y: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+section{
+    height:100vh;
+    width: auto;
+}
+.job_descriptions{
+    width: 600px;
+}
+/*.jobs_box{
+    
+}*/
+.projects_description_height{
+    /*max-height: 430px;*/
+    max-height: 50vh;
+}
+.overflow-elements {
+    overflow-y: auto !important;
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+    scrollbar-width: thin; /* can also be normal, or none, to not render scrollbar */
+    scrollbar-color: currentColor transparent; /* foreground background */
+    padding-bottom: 15%;
+}
+/* Webkit / Blink */
+.overflow-elements::-webkit-scrollbar {
+    width: 5px;
+}
+
+.overflow-elements::-webkit-scrollbar-thumb {
+    background-color: currentColor;
+    border-radius: 9999px; /* always round */
+    background-color: #f59c28;
+}
+.company_logo_box{
+    height: 200px;
+    vertical-align: middle;;
+}
+.company_logo{
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 h5{
     color: #5c8f03;
