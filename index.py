@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route( '/' )
 def index():
-    return render_template( 'presentation.html' )
+    return render_template( 'index.html' )
 
 @app.route( '/presentation' )
 def presentation():
@@ -13,10 +13,6 @@ def presentation():
 @app.route( '/experience' )
 def experience():
     return render_template( 'experience.html' )
-
-@app.route( '/index' )
-def index_2():
-    return render_template( 'index.html' )
 
 def image():
     return send_file('templates/images/profile_foto_rounded.png',  mimetype='image/png')
