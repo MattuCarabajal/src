@@ -9,12 +9,12 @@
             <tbody>
                 <tr class="bg_not_emphasis">
                     <td style="background-color:#ca75258f;width:35px">
-                        <img src="{{url_for('static',filename = 'images/icon-python.png')}}"
-                            class="rounded mx-auto d-block icon not_selectable" alt="Python">
+                        <img src="{{ ide_data[ 'language_img' ] }}"
+                            class="rounded mx-auto d-block icon not_selectable" alt="{{ ide_data[ 'language' ] }}">
                     </td>
                     <td style="background-color:#ca75258f;width:100px" class="white text-center">
                         <span class="not_selectable">
-                            hello_world.py
+                            {{ ide_data[ 'file_name' ] }}
                         </span>
                         <!-- <div onselectstart="return false">your text</div> Not working properly-->
                     </td>
@@ -29,9 +29,6 @@
             <tbody>
                 <tr>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
             </tbody>
         </table>
@@ -42,7 +39,7 @@
                     <td class="inactive_row not_selectable">1</td>
                     <td>
                         <span class="orange">
-                            January 2022
+                            {{ date }}
                         </span>
                     </td>
                     <td class="mobile_hidden"></td>
@@ -53,12 +50,12 @@
                     <td class="inactive_row not_selectable">2</td>
                     <td>
                         <span class="green">
-                            Maretto, Matías Ezequiel
+                            {{ me[ 'name' ] }}
                         </span>
                     </td>
                     <td colspan="2" rowspan="5" style="width:400px"  class="mobile_hidden">
-                        <img id="profile_photo" src="{{url_for('static',filename = 'images/profile_foto_rounded.png')}}"
-                            class="rounded mx-auto d-block profile_photo" alt="Matías Ezequiel Maretto">
+                        <img id="profile_photo" src="{{ me[ 'img_src' ] }}"
+                            class="rounded mx-auto d-block profile_photo" alt="{{ me[ 'name' ] }}">
                     </td>
                 </tr>
                 <tr>
@@ -66,7 +63,7 @@
                     <td class="inactive_row not_selectable">3</td>
                     <td>
                         <span class="blue">
-                            +54 11 3118-3146
+                            {{ me[ 'cellphone' ] }}
                         </span>
                     </td>
                 </tr>
@@ -75,7 +72,7 @@
                     <td class="inactive_row not_selectable">4</td>
                     <td>
                         <span class="blue">
-                            matias.maretto@gmail.com
+                            {{ me[ 'mail' ] }}
                         </span>
                     </td>
                 </tr>
@@ -84,7 +81,7 @@
                     <td class="inactive_row not_selectable">5</td>
                     <td>
                         <span class="blue">
-                            Tomás M. Saubidet 3988 - 10 C
+                            {{ me[ 'home_address' ] }}
                         </span>
                     </td>
                 </tr>
@@ -93,7 +90,7 @@
                     <td class="inactive_row not_selectable">6</td>
                     <td>
                         <span class="blue">
-                            Villa Martelli | Vicente López
+                            {{ me[ 'city' ] }}
                         </span>
                     </td>
                 </tr>
@@ -103,7 +100,7 @@
                     <td colspan="2">
                         <span class="violet">print</span>
                         <span class="white">(</span>
-                        <span class="green">'Lack of knowledge is not an excuse or impediment,</span>
+                        <span class="green">'{{ me[ 'phrase_a' ] }}</span>
                     </td>
                     <td style="width:0px" class="mobile_hidden"></td>
                 </tr>
@@ -111,7 +108,7 @@
                     <td></td>
                     <td class="inactive_row not_selectable">8</td>
                     <td colspan="2" align="right">
-                        <span class="green">it’s just the first step to learn something new.'</span>
+                        <span class="green">{{ me[ 'phrase_b' ] }}'</span>
                         <span class="white">)</span>
                     </td>
                     <td style="width:0px" class="mobile_hidden"></td>
@@ -129,11 +126,11 @@
             <tbody>
                 <tr class="bg_emphasis text-center">
                     <td style="width:10px" align="left"></td>
-                    <td style="width:80px" class="text-center not_selectable" align="left">master</td>
+                    <td style="width:80px" class="text-center not_selectable" align="left">{{ ide_data[ 'branch' ] }}</td>
                     <td></td>
-                    <td style="width:80px" class="text-center not_selectable" align="right">UTF-8</td>
-                    <td style="width:80px" class="text-center not_selectable" align="right">Python</td>
-                    <td style="width:80px" class="text-center not_selectable" align="right">3.9.1</td>
+                    <td style="width:80px" class="text-center not_selectable" align="right">{{ ide_data[ 'encoding' ] }}</td>
+                    <td style="width:80px" class="text-center not_selectable" align="right">{{ ide_data[ 'language' ] }}</td>
+                    <td style="width:80px" class="text-center not_selectable" align="right">{{ ide_data[ 'language_version' ] }}</td>
                     <td style="width:10px" class="text-center not_selectable" align="right"></td>
                 </tr>
             </tbody>
